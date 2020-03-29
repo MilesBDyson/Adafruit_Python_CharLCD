@@ -36,34 +36,34 @@ def hsv_to_rgb(hsv):
         return (v, p, q)
 
 # Raspberry Pi configuration:
-lcd_rs = 27  # Change this to pin 21 on older revision Raspberry Pi's
-lcd_en = 22
-lcd_d4 = 25
-lcd_d5 = 24
-lcd_d6 = 23
-lcd_d7 = 18
-lcd_red   = 4
-lcd_green = 17
-lcd_blue  = 7  # Pin 7 is CE1
+#lcd_rs = 27  # Change this to pin 21 on older revision Raspberry Pi's
+#lcd_en = 22
+#lcd_d4 = 25
+#lcd_d5 = 24
+#lcd_d6 = 23
+#lcd_d7 = 18
+#lcd_red   = 4
+#lcd_green = 17
+#lcd_blue  = 7  # Pin 7 is CE1
 
 # BeagleBone Black configuration:
-# lcd_rs = 'P8_8'
-# lcd_en = 'P8_10'
-# lcd_d4 = 'P8_18'
-# lcd_d5 = 'P8_16'
-# lcd_d6 = 'P8_14'
-# lcd_d7 = 'P8_12'
-# lcd_red   = 'P9_16'
-# lcd_green = 'P9_14'
-# lcd_blue  = 'P8_13'
+lcd_rs = 'P8_8'
+lcd_en = 'P8_10'
+lcd_d4 = 'P8_18'
+lcd_d5 = 'P8_16'
+lcd_d6 = 'P8_14'
+lcd_d7 = 'P8_12'
+lcd_red   = 'P9_16'
+lcd_green = 'P9_14'
+lcd_blue  = 'P8_13'
 
 # Define LCD column and row size for 16x2 LCD.
-lcd_columns = 16
-lcd_rows    = 2
+#lcd_columns = 16
+#lcd_rows    = 2
 
 # Alternatively specify a 20x4 LCD.
-# lcd_columns = 20
-# lcd_rows    = 4
+lcd_columns = 20
+lcd_rows    = 4
 
 # Initialize the LCD using the pins
 lcd = LCD.Adafruit_RGBCharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7,
