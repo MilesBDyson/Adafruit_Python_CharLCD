@@ -10,7 +10,6 @@ identify pins on the board, be sure to read the BeagleBone Black GPIO guide.
 * Connect BeagleBone Black ground pin P8_2 to the ground rail of the breadboard. From
     the ground rail connect the other outer lead of the potentiometer, LCD pin 1 (VSS),
     and LCD pin 5 (R/W).
-    
 * Connect the middle lead of the potentiometer to LCD pin 3 (V0/contrast).
 * Connect BeagleBone Black pin P8_8 to LCD pin 4 (RS).
 * Connect BeagleBone Black pin P8_10 to LCD pin 6 (E/clock enable).
